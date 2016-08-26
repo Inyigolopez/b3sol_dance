@@ -13,6 +13,7 @@ Algoritmo:
 Una vez creado el grafo, obtenemos su matriz de adyacencias, que es una matriz simetrica nxn donde en caso de que el nodo n1 este unido al nodo n2, en la celda (n1,n2) de la matriz tenemos un 1, y en caso contrario un 0.
 
 -Una vez creada la matriz de adyacencias recorremos mediante 3 bucles:
+
 	- El bucle 1 va a recorrer cada fila de la matriz, que representa a un nodo, y en cada ejecución de un paso completo del bucle, obtendremos el color con el que colorearemos ese nodo.
 	 
 	- El segundo bucle recorre el vector de codificación de colores (valores 1,2,3....n ). En caso que ese color no pueda ser utilizado pasaremos al siguiente color y comenzaremos de nuevo.
