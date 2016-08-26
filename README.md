@@ -14,7 +14,9 @@ Una vez creado el grafo, obtenemos su matriz de adyacencias, que es una matriz s
 
 -Una vez creada la matriz de adyacencias recorremos mediante 3 bucles:
 	- El bucle 1 va a recorrer cada fila de la matriz, que representa a un nodo, y en cada ejecución de un paso completo del bucle, obtendremos el color con el que colorearemos ese nodo.
+	 
 	- El segundo bucle recorre el vector de codificación de colores (valores 1,2,3....n ). En caso que ese color no pueda ser utilizado pasaremos al siguiente color y comenzaremos de nuevo.
+	 
 	- El tercer bucle recorre cada una de las columnas de la matriz, que representan el resto de nodos. Para cada uno, comparamos si hay rivalidad entre los nodos y en caso de haberla, si el color que estamos utilizando esta asignado al nodo rival en el vector de asignación de colores. En caso de ser asi, salimos del bucle, elegimos el siguiente color y volvemos a evaluar a todos los nodos rivales. En caso contrario, continuamos con el siguiente nodo rival. Si acabada la evaluación contra todos los nodos rivales, no encontramos incompatibilidad, asignamos el color del bucle 2 al nodo del bucle 1.
 
 Una vez acabado el proceso, asignamos el vector de colores a nuestro grafo para que coloree los nodos en función del resultado. 
